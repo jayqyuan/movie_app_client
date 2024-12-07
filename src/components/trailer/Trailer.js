@@ -7,8 +7,6 @@ import React from 'react';
 const Trailer = () => {
 	let params = useParams();
 	let key = params.ytTrailerId;
-  console.log(key, 'this is key', params, 'this is params')
-
 	return (
 		<div className='react-player-container'>
 			{key != null ? (
