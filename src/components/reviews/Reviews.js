@@ -1,19 +1,71 @@
-import { useEffect, useRef } from "react";
-import api from '../../api/axiosConfig'
-import { useParams } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
-import reviewForm from "../reviewForm/reviewForm";
+import { useEffect, useRef } from 'react';
+import api from '../../api/axiosConfig';
+import { useParams } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
+import reviewForm from '../reviewForm/reviewForm';
 
-import React from 'react'
+import React from 'react';
 
-const Reviews = () => {
-    const revText = useRef();
-    let params = useParams();
-    const movieId = params.movieId;
+const Reviews = ({ getMovieData, movie, reviews, setMovies }) => {
+	const revText = useRef();
+	let params = useParams();
+	const movieId = params.movieId;
 
-  return (
-    <div>Reviews</div>
-  )
-}
+	useEffect(() => {
+		getMovieData(movieId);
+	}, []);
 
-export default Reviews
+	return (
+		<Container>
+			<Row>
+				<Col>
+					<h3>Reviews</h3>
+				</Col>
+			</Row>
+			<Row className='mt-2'>
+				<Col>
+					<img
+						src={movie?.poster}
+						alt=''
+					/>
+				</Col>
+				<Col>
+					{
+						<>
+							<Row>
+								<Col>
+									<reviewForm
+										handleSubmit={addReview}
+										revText={revText}
+										labelText='Write a Review'
+									/>
+								</Col>
+							</Row>
+							<Row>
+								<Col>
+									<hr />
+								</Col>
+							</Row>
+						</>
+					}
+					{reviews?.map((r) => {
+						return (
+							<>
+								<Row>
+									<Col>{r.body}</Col>
+								</Row>
+								<Row>
+									<Col>
+										<hr />
+									</Col>
+								</Row>
+							</>
+						);
+					})}
+				</Col>
+			</Row>
+		</Container>
+	);
+};
+
+export default Reviews;
