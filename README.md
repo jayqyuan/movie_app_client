@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 🎬 Movie App Client  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Movie App Client**, the frontend application for a movie database system that allows users to explore movie details and watch trailers. This application is built with modern web technologies to provide a seamless and visually appealing user experience.  
 
-## Available Scripts
+![GitHub license](https://img.shields.io/github/license/jayqyuan/movie_app_client?style=for-the-badge)  
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)  
+![Axios](https://img.shields.io/badge/Axios-%2359C9E6.svg?style=for-the-badge&logo=axios&logoColor=white)  
+![Bootstrap](https://img.shields.io/badge/Bootstrap-%237952B3.svg?style=for-the-badge&logo=bootstrap&logoColor=white)  
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)  
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)  
+![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
+![Maven](https://img.shields.io/badge/Maven-%23C71A36.svg?style=for-the-badge&logo=apache-maven&logoColor=white)  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ **Features**  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dynamic Movie Carousel**: Displays featured movies with posters, backdrops, and titles in a visually engaging carousel.  
+- **Watch Trailers**: Allows users to play YouTube trailers directly within the app.  
+- **Responsive Design**: Fully responsive UI built with React, Bootstrap, and MUI for a great experience across devices.  
+- **Real-time API Integration**: Fetches movie data from the backend via Axios.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ **Technologies Used**  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend  
+- **React**: Component-based architecture for building dynamic user interfaces.  
+- **JavaScript (ES6+)**: Core programming language for frontend logic.  
+- **Axios**: Simplified HTTP requests to interact with the backend API.  
+- **Bootstrap**: Pre-designed UI components for faster, responsive design.  
+- **Material-UI (MUI)**: Modern React components for a clean and polished design.  
 
-### `npm run build`
+### Backend  
+- **Java**: Programming language used for backend logic.  
+- **Spring Boot**: Framework for building RESTful APIs.  
+- **MongoDB**: NoSQL database used for storing movie data.  
+- **Spring Data MongoDB**: Simplifies interactions with MongoDB.  
+- **Maven**: Dependency management and build automation tool.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Find the backend repository here: [movie_app_server](https://github.com/jayqyuan/movie_app_server).  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 **Getting Started**  
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Prerequisites  
+Ensure you have the following installed:  
+- **Node.js** (v14+ recommended)  
+- **npm** or **yarn**  
+- **Java JDK** (v11+ recommended)  
+- **MongoDB**  
