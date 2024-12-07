@@ -7,7 +7,7 @@ Welcome to the **Movie App Client**, the frontend application for a movie databa
 ![Axios](https://img.shields.io/badge/Axios-%2359C9E6.svg?style=for-the-badge&logo=axios&logoColor=white)  
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-%237952B3.svg?style=for-the-badge&logo=bootstrap&logoColor=white)  
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)    
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=oracle&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)  
 ![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
 ![Maven](https://img.shields.io/badge/Maven-%23C71A36.svg?style=for-the-badge&logo=apache-maven&logoColor=white)  
@@ -39,11 +39,9 @@ Welcome to the **Movie App Client**, the frontend application for a movie databa
 - **Spring Data MongoDB**: Simplifies interactions with MongoDB.  
 - **Maven**: Dependency management and build automation tool.  
 
-Find the backend repository here: [movie_app_server](https://github.com/jayqyuan/movie_app_server).  
+Find the backend repository here: [movie_app_server](https://github.com/jayqyuan/movies_app_java).  
 
 ---
-
-## 🚀 **Getting Started**  
 
 ### Prerequisites  
 Ensure you have the following installed:  
