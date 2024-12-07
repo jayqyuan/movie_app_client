@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react';
 import api from '../../api/axiosConfig';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
-import reviewForm from '../reviewForm/reviewForm';
 
 import React from 'react';
+import ReviewForm from '../reviewForm/reviewForm';
 
 const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 	const revText = useRef();
@@ -15,27 +15,27 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 		getMovieData(movieId);
 	}, []);
 
-    const addReview = async(e)=>{
-        e.preventDefaul();
+    const addReview = async (e) => {
+			e.preventDefault();
 
-        const rev = revText.current;
+			const rev = revText.current;
 
-        try {
-            const response = await api.post('/api/v1/reviews', {
-							reviewBody: rev.value,
-							imdbId: movieId,
-						});
+			try {
+				const response = await api.post('/api/v1/reviews', {
+					reviewBody: rev.value,
+					imdbId: movieId,
+				});
 
-            const updateReviews = [...reviews, { body: rev.value }];
+				const updatedReviews = [...(reviews || []), { body: rev.value }];
 
-            rev.value = '';
+				rev.value = '';
 
-            setReviews(updateReviews);
-            
-        } catch (error) {
-            console.log(error)
-        }
-    }
+				setReviews(updatedReviews);
+			} catch (err) {
+				console.error(err);
+			}
+		};
+
 
 	return (
 		<Container>
@@ -56,10 +56,10 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 						<>
 							<Row>
 								<Col>
-									<reviewForm
+									<ReviewForm
 										handleSubmit={addReview}
 										revText={revText}
-										labelText='Write a Review'
+										labelText='Write a Review?'
 									/>
 								</Col>
 							</Row>
@@ -84,6 +84,11 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 							</>
 						);
 					})}
+				</Col>
+			</Row>
+			<Row>
+				<Col>
+					<hr />
 				</Col>
 			</Row>
 		</Container>

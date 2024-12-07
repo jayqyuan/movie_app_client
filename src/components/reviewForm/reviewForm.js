@@ -1,6 +1,6 @@
 import { Form, Button } from 'react-bootstrap'
 
-const reviewForm = ({handleSubmit, revText, labelText, defaultValue}) => {
+const ReviewForm = ({handleSubmit, revText, labelText, defaultValue}) => {
   return (
     
     <Form>
@@ -14,4 +14,4 @@ const reviewForm = ({handleSubmit, revText, labelText, defaultValue}) => {
   )
 }
 
-export default reviewForm
+export default ReviewForm
