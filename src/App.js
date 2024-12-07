@@ -10,6 +10,8 @@ import Trailer from './components/trailer/Trailer';
 function App() {
 
   const [movies, setMovies] = useState([]);
+  const [movie, setMovie] = useState();
+  const [reviews, setReviews] = useState()
 
   const getMovies = async()=>{
 
@@ -23,6 +25,19 @@ function App() {
       console.log(err);
     }
     
+  }
+
+  const getMovieData = async(movieId)=>{
+    try {
+      const response = await api.get(`/api/v1/movies/${movieId}`)
+      
+      const singleMovie = response.data
+      setMovie(singleMovie);
+      setReviews(singleMovie)
+    } catch (error) {
+      console.log(error)
+    }
+
   }
 
   useEffect(()=>{
